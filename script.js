@@ -1,4 +1,4 @@
-var topics = ["topic1","topic2", "topic3"];
+var topics = ["St. Vincent", "Sufjan Stevens","Bjork","Grimes","LCD Soundsystem","Perfume Genius"];
 function createbutton(topic){
 	var buttonDiv = $("#buttons-list");
 	var newbutton=$("<button>").text(topic).addClass("btn btn-outline-primary topic ");
@@ -22,9 +22,9 @@ $("#buttons-list").on("click",".topic",function(){
 			var gifDiv = $("#gifdiv");
 			var rating = results[i].rating;
 			var p = $("<p>").text("Rating: "+rating);
-			var img = $("<img>").attr("src",results[i].images.fixed_height_still.url).attr("altsrc",results[i].images.fixed_height.url).addClass("gif");
-			gifDiv.append(p);
+			var img = $("<img>").attr("src",results[i].images.fixed_height_still.url).attr("altsrc",results[i].images.fixed_height.url).addClass("gif img-thumbnail");
 			gifDiv.append(img);
+			gifDiv.append(p);
 		}
 	})
 })

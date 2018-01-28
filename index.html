@@ -2,18 +2,26 @@
 <html lang="en-us">
 	<head>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<div class="jumbotron">
 			<div class="container">
-				Giphy Querier
+				<h1 class="display-2">Giphy Querier</h1>
+				<p class="font-weight-light">(please allow each gif a second or so to animate after you click it!)</p>
 			</div>
 		</div>
-		<div class="container">
-			<div id="buttons-list"></div>
-			<input type="text" name="newTopic" id="newTopic">
-			<button id="submit">add</button>
-			<div id="gifdiv"></div>
+		<div class="container rounded" id="main">
+			<div class="row">
+				<div id="buttons-list" class="btn-group"></div>
+			</div>
+			<div class="row">
+				<input type="text" name="newTopic" id="newTopic">
+				<button id="submit">add</button>
+			</div>
+			<div class="row">
+				<div id="gifdiv"></div>
+			</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="script.js"></script>
